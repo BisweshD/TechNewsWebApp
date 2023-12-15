@@ -1,0 +1,136 @@
+
+
+/* General styles */
+.app-header {
+    text-align: center;
+    background-color: #ffffff;
+    color: rgb(255, 255, 255);
+    padding: 0;
+  }
+  
+  .app-logo {
+    width: 150;  /* You can adjust the size */
+    height: 260px;
+    filter: brightness(1.2); /* Adjust brightness */
+  }
+  .slogan {
+    font-size: 1.2em;
+    margin-top: 10px;
+  }
+  
+.container {
+    max-width: 1200px;
+    margin: auto;
+    background-color: #f4f4f4;
+    font-family: 'Amoretta', serif; /* Updated to a suggested font */
+  }
+  
+  /* Header styles */
+  .title {
+    text-align: center;
+    font-size: 3em;
+    margin: 20px 0;
+    color: #333;
+    text-transform: uppercase; /* Added */
+  }
+  
+  /* Menu styles */
+  .menu {
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+    color: #fff;
+  }
+  
+  .menu ul {
+    display: flex;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+  
+  .menu li {
+    padding: 15px;
+    cursor: pointer;
+  }
+  
+  .menu li.active {
+    background-color: #fff;
+    color: #000;
+    border-bottom: 2px solid #2f2f2f; /* Added */
+  }
+  
+  /* News Grid styles */
+  .news-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /* 3-column grid */
+    gap: 20px;
+    padding: 20px;
+  }
+  
+  /* News Item styles */
+  .article {
+    background-color: #fff;
+    margin: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add shadow */
+  }
+  
+  .article-image {
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+  }
+  
+  .article-image img {
+    width: 100%;
+    height: auto;
+  }
+  
+  .article-title, .article-source, .article-description {
+    padding: 10px;
+  }
+  
+  .article-title {
+    font-size: 24px;
+    color: #000; /* Black text */
+    text-decoration: none; /* No underline */
+  }
+  
+  .article-description {
+    font-size: 16px;
+    color: #333;
+  }
+  
+  .section-header {
+    font-size: 2em;
+    margin: 20px 0;
+    padding-left: 20px;
+    border-left: 4px solid #333;
+  }
+  
+/* Remove blue color and underline for all hyperlinks */
+a {
+    color: black;
+    text-decoration: none;
+  }
+  
+  .article-title a, .article-source a {
+    color: black;
+    text-decoration: none;
+  }
+
+ /* CSS for hover effects */
+.article:hover {
+    transform: scale(1.05);
+    transition: transform 0.5s ease;
+  }
+
+  @media (max-width: 768px) {
+    .news-grid {
+      grid-template-columns: 1fr;
+    }
+  }
+
+ 
